@@ -37,18 +37,14 @@ class OrdersListItem extends Component {
                     </tr>
                 
             
-            // <ul className="list-group list-group-horizontal">
-            //     <li className="list-group-item">{item.order_id}</li>
-            //     <li className="list-group-item">{item.price_in_dollar}</li>
-            //     <li className="list-group-item">{item.price_in_rub}</li>
-            //     <li className="list-group-item">{item.date_delivery}</li>
+            // 
             //     <div className="update-btn">
             //         <button type="button" className="btn btn-danger">Удалить</button>
             //     </div>
             //     <div className="update-btn">
             //         <button type="button" className="btn btn-danger">Обновить</button>
             //     </div> 
-            // </ul>
+            // 
         ));
         return (
             
