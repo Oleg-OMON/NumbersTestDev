@@ -26,23 +26,46 @@ class OrdersListItem extends Component {
 
     render() {
 
-        const listItem = this.state.data?.map((item) => (
-            <ul className="list-group list-group-horizontal">
-                <li className="list-group-item">{item.order_id}</li>
-                <li className="list-group-item">{item.price_in_dollar}</li>
-                <li className="list-group-item">{item.price_in_rub}</li>
-                <li className="list-group-item">{item.date_delivery}</li>
-                <div className="update-btn">
-                    <button type="button" className="btn btn-danger">Удалить</button>
-                </div>
-                <div className="update-btn">
-                    <button type="button" className="btn btn-danger">Обновить</button>
-                </div> 
-            </ul>
+        const listItem = this.state.data?.map((item, index) => (
+            
+                    <tr>
+                        <th scope="row">{index}</th>
+                        <td>{item.order_id}</td>
+                        <td>{item.price_in_dollar}&#36;</td>
+                        <td>{item.price_in_rub}&#8381;</td>
+                        <td>{item.date_delivery}</td>
+                    </tr>
+                
+            
+            // <ul className="list-group list-group-horizontal">
+            //     <li className="list-group-item">{item.order_id}</li>
+            //     <li className="list-group-item">{item.price_in_dollar}</li>
+            //     <li className="list-group-item">{item.price_in_rub}</li>
+            //     <li className="list-group-item">{item.date_delivery}</li>
+            //     <div className="update-btn">
+            //         <button type="button" className="btn btn-danger">Удалить</button>
+            //     </div>
+            //     <div className="update-btn">
+            //         <button type="button" className="btn btn-danger">Обновить</button>
+            //     </div> 
+            // </ul>
         ));
         return (
             
-            <div>{listItem}</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Номер заказа</th>
+                        <th scope="col">Цена в долларах</th>
+                        <th scope="col">Цена в рублях</th>
+                        <th scope="col">Срок доставки</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                     {listItem}
+                    </tbody>
+            </table>
            
             
         )
