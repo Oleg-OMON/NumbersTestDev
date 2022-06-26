@@ -5,9 +5,12 @@ import OrdersList from '../order-list/orders-list';
 
 function App() {
     return (
-        <div className="search-panel">
+        <div className='app-x'>
+            <div className="search-panel">
             <SearchPanel/>
-            <OrdersList/>
+            
+            </div>
+        <OrdersList/>
         </div>
         
             

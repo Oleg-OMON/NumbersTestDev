@@ -7,6 +7,7 @@ class OrdersListItem extends Component {
         this.state = {
             data: []
     }
+    
     }
 
     componentDidMount() {
@@ -15,6 +16,7 @@ class OrdersListItem extends Component {
     
 
     orderService = new OrdersApiService();
+
     addOrders = () => {
         this.orderService.getAllOrders().then(res => {
             
@@ -23,32 +25,32 @@ class OrdersListItem extends Component {
         })
     }
   
-
+     
     render() {
 
         const listItem = this.state.data?.map((item, index) => (
-            
+                
                     <tr>
                         <th scope="row">{index + 1}</th>
-                        <td>{item.order_id}</td>
-                        <td>{item.price_in_dollar}&#36;</td>
-                        <td>{item.price_in_rub}&#8381;</td>
-                        <td>{item.date_delivery}</td>
+                        <td><input type="number" value={item.order_id}/></td>
+                        <td><input type="number" value={item.price_in_dollar}/>&#36;</td>
+                        <td><input type="number" value={item.price_in_rub}/>&#8381;</td>
+                        <td><input type="text" value={item.date_delivery}/></td>
                     </tr>
                 
             
             // 
             //     <div className="update-btn">
-            //         <button type="button" className="btn btn-danger">Удалить</button>
+            //         {/* <button type="button" className="btn btn-danger">Обновить</button> */}
             //     </div>
             //     <div className="update-btn">
-            //         <button type="button" className="btn btn-danger">Обновить</button>
+            //         {/* <button type="button" className="btn btn-danger">Удалить</button> */}
             //     </div> 
             // 
         ));
         return (
             
-            <table class="table">
+            <table className="table-sm">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
