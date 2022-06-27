@@ -1,4 +1,6 @@
+
 import './search-order.css';
+
 
 const SearchPanel = () => {
     return (
@@ -8,7 +10,7 @@ const SearchPanel = () => {
                 placeholder="Введите нормер заказа">
                 </input>
             <div className="search-btn">
-                <button type="button" className="btn btn-primary">Найти</button>
+                <button type="button"  className="btn btn-primary">Найти</button>
             </div>
             <div className="search-btn">
                 <button type="button" className="btn btn-primary">Все заказы</button>
