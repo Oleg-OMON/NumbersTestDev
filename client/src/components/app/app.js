@@ -10,7 +10,7 @@ function App() {
             <SearchPanel/>
             
             </div>
-        <OrdersList/>
+            <OrdersList/>
         </div>
         
             

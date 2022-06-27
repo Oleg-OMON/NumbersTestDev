@@ -3,6 +3,8 @@ import './search-order.css';
 
 
 const SearchPanel = () => {
+      
+    
     return (
         <div className='search'>
             <input type='number' 
@@ -13,7 +15,7 @@ const SearchPanel = () => {
                 <button type="button"  className="btn btn-primary">Найти</button>
             </div>
             <div className="search-btn">
-                <button type="button" className="btn btn-primary">Все заказы</button>
+                <button type="button" className="btn btn-primary" >Все заказы</button>
             </div>     
         </div>
     )

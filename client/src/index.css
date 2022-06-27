@@ -5,8 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/backgroundOrders.jpg');
+  background-image: url('/backgtoundPic.jpg');
   background-size: 100% 100%;
+  
 }
 
 code {
@@ -16,4 +17,6 @@ code {
 html {
   height: 100%;
   box-sizing: border-box;
+  background-attachment: scroll;
+  ​​​​​​​background-repeat: no-repeat;
 }

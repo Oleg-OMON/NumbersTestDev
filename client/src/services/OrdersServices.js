@@ -15,8 +15,8 @@ class OrdersApiService {
     }
 
     // функция получения всех заказов(GET и POST методы)
-    getAllOrders = () => {
-        return this.getResponce(`${this._ApiUrl}`);
+    getAllOrders = (page = this._ApiUrl) => {
+        return this.getResponce(`${page}`);
     }
 
     // функция получения одного заказа по номеру(GET,POST,PUT
