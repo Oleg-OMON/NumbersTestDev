@@ -29,7 +29,7 @@ class OrdersListItem extends Component {
         const listItem = this.state.data?.map((item, index) => (
             
                     <tr>
-                        <th scope="row">{index}</th>
+                        <th scope="row">{index + 1}</th>
                         <td>{item.order_id}</td>
                         <td>{item.price_in_dollar}&#36;</td>
                         <td>{item.price_in_rub}&#8381;</td>

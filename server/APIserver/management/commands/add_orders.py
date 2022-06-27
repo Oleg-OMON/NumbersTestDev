@@ -34,8 +34,7 @@ class Command(BaseCommand):
             return int(dollar_curs)
 
         def get_date():
-            CREDENTIALS_FILE = '/Users/anastasiazurbina/Desktop/numbersTest/NumbersTestDev/script_console/myproject' \
-                               '.json'
+            CREDENTIALS_FILE = 'C:/Users/olzas/NumbersTestTask/myproject.json'
             spreadsheet_id = '1RNK-HTAJKTwW1GDuCEUpNrwMXDVtj4ruTXZ-hlGWOC0'
 
             # Авторизуемся и получаем service — экземпляр доступа к API
