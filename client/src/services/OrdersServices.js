@@ -22,7 +22,7 @@ class OrdersApiService {
     // функция получения одного заказа по номеру(GET,POST,PUT
     // и DELETE методы)
     getOrder = (id) => {
-        return this.getResponce(`${this._ApiUrl}+${id}/`);
+        return this.getResponce(`${this._ApiUrl}${id}/`);
     }
 }
 
